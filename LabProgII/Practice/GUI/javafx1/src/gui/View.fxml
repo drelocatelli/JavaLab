@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+   <children>
+      <Button fx:id="btTest" layoutX="173.0" layoutY="138.0" mnemonicParsing="false" onAction="#onBtTestAction" text="Botao" />
+      <Label layoutX="89.0" layoutY="95.0" text="Se clicar no botao voce vai morrer" />
+   </children>
+</AnchorPane>
