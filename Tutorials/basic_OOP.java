@@ -2,16 +2,18 @@ import java.util.Scanner;
 
 class Cachorro {
 	
+	public int id;
 	public String nome;
 	
-	public Cachorro(String nome) {
+	public Cachorro(int id, String nome) {
 		super();
+		this.id = id;
 		this.nome = nome;
 	}
 	
 	@Override
 	public String toString() {
-		return "Cachorro [nome=" + nome + "]";
+		return "Cachorro [id="+id+", nome=" + nome + "]";
 	}
 
 }
@@ -30,7 +32,7 @@ public class Main {
 		
 		for(int i = 0; i < quantity; i++) {
 			System.out.println("Nome do cachorro "+ (i+1) + ":");
-			myCachorros[i] = new Cachorro(input.nextLine());
+			myCachorros[i] = new Cachorro(i, input.nextLine());
 		}
 		
 		// imprime variaveis
