@@ -28,6 +28,8 @@ public class Main {
 		
 		// input
 		int quantity = 3;
+		
+		// conjunto
 		Cachorro[] myCachorros = new Cachorro[quantity];
 		
 		for(int i = 0; i < quantity; i++) {
