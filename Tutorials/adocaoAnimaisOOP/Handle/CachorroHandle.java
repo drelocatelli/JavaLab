@@ -27,18 +27,12 @@ public class CachorroHandle {
 		Cachorro[] myCachorrosCopy = Arrays.copyOf(myCachorros, tamanho);
 		
 		for(int i = myCachorros.length; i < myCachorrosCopy.length; i++) {
-			System.out.println();
 			input.nextLine();
 			
 			System.out.printf("Nome do cachorro %d: ", (i+1));
 			String nome = input.nextLine();
 			
-			
-			System.out.printf("Idade do cachorro %d: ", (i+1));
-			int idade = input.nextInt();
-			
-			myCachorrosCopy[i] = new Cachorro(nome, idade);
-			i++;
+			myCachorrosCopy[i] = new Cachorro(nome);
 		}
 		
 		myCachorros = myCachorrosCopy;
@@ -59,11 +53,7 @@ public class CachorroHandle {
 			System.out.printf("Nome do cachorro %d: ", (i+1));
 			String nome = input.nextLine();
 			
-			
-			System.out.printf("Idade do cachorro %d: ", (i+1));
-			int idade = input.nextInt();
-			
-			myCachorros[i] = new Cachorro(nome, idade);
+			myCachorros[i] = new Cachorro(nome);
 			i++;
 		}
 	}
