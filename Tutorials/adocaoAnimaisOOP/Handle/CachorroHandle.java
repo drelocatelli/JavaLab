@@ -23,12 +23,10 @@ public class CachorroHandle {
 		int quantity = input.nextInt();
 		int tamanho = myCachorros.length + quantity;
 		
-		// cria uma copia com nova quantidade
 		Cachorro[] myCachorrosCopy = Arrays.copyOf(myCachorros, tamanho);
 		
 		for(int i = myCachorros.length; i < myCachorrosCopy.length; i++) {
 			input.nextLine();
-			
 			System.out.printf("Nome do cachorro %d: ", (i+1));
 			String nome = input.nextLine();
 			
@@ -47,9 +45,7 @@ public class CachorroHandle {
 		
 		int i = 0;
 		while(i < quantity) {
-			System.out.println();
 			input.nextLine();
-			
 			System.out.printf("Nome do cachorro %d: ", (i+1));
 			String nome = input.nextLine();
 			
